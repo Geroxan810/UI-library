@@ -1,5 +1,6 @@
 @import "reset";
-
+$content-color: #03a9f4;
+$main-color: #fafafa;
 
 /* grid */
 
@@ -20,7 +21,7 @@
 	width: 100%;
 }
 .span_1_of_2 {
-	width: 25%;
+	width: 230px;
 }
 
 
@@ -31,14 +32,15 @@
   margin: 5%;
 }
 .main_col {
-  background-color: lightblue;
-  width: 75%;
+  background-color: $main-color;
+  width: calc(100% - 230px);
   height: 100em;
-  margin-left: 25%;
+  margin-left: 230px;
 }
 .setting {
   position: fixed;
   height: 100%;
+	background-color: $content-color;
 }
 
 .form {
@@ -79,16 +81,6 @@
 .amethyst{background-color: #9B59B6;}
 .Wisteria{background-color: #8e44ad;}
 .wet_asphalt{background-color: #34495E;}
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 900px) {
 	.span_2_of_2, .span_1_of_2 { width: 100%; }
