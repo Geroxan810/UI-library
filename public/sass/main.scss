@@ -38,7 +38,6 @@
 }
 .setting {
   position: fixed;
-  background-color: aquamarine;
   height: 100%;
 }
 
@@ -51,18 +50,35 @@
   max-width: 100%;
 }
 
+.color_wrap {
+	padding: 10px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: left;
+	width: 200px;
+	margin: 10px;
+	color: #fff;
+	border-radius: 10px;
 
+			& > div:first-child {
+				border-radius: 10px 10px 0 0;
+}
+			& > div:last-child {
+				border-radius: 0 0 10px 10px;
+			}
+			& > div {
+				padding: 10px;
+			}
+}
 
-
-
-
-
-
-
-
-
-
-
+.green_sea {background-color: #16A085;}
+.emerland {background-color: #2ECC71;}
+.nephritis {background-color: #27AE60;}
+.peter_river{background-color: #3498DB;}
+.belizehole{background-color: #2980B9;}
+.amethyst{background-color: #9B59B6;}
+.Wisteria{background-color: #8e44ad;}
+.wet_asphalt{background-color: #34495E;}
 
 
 
