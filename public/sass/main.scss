@@ -1,1 +1,49 @@
-@import "reset"
+@import "reset";
+
+
+/* grid */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 20%;
+}
+
+
+/* style */
+
+.title {
+  text-align: center;
+  margin: 5%;
+}
+.main_col {
+  background-color: lightblue;
+  width: 80%;
+  height: 100em;
+  margin-left: 20%;
+}
+.setting {
+  position: fixed;
+  background-color: aquamarine;
+  height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+  .main_col {width: 100%; margin: 0}
+  .setting {max-height: 300px; position: relative;}
+}
