@@ -12,3 +12,9 @@ $('.dropdown-trigger').on('click', function() {
 $('.dropdown-trigger--mobile').on('click', function() {
   dropdownClick('.mobile-menu-dropdown', '.profile-dropdown');
 });
+
+$('#flat').colpick({
+    color:'123456',
+    flat:true,
+    layout:'hex'
+});
