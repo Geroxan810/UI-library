@@ -1,0 +1,74 @@
+
+body {
+  background-color: #888888;
+  color: #fff;
+}
+.btn {
+	font-family: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+  color: #fff;
+  border: 1px white solid;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s;
+}
+.basic{
+  background-color: #000;
+}
+.one {
+  transition: all ease-in-out .2s;
+  background-color:#000;
+&:hover {
+   transform: scale(1.15);
+}}
+
+.two {
+  background-color: #000000;
+
+  &:hover {
+    background-color: #3e3e3e;
+    transition: background-color .2s ease-out;
+  }
+}
+
+.three {
+  border-radius: 10px;
+  background-color:#000;
+}
+
+.four {
+  border: 2px #ecd013 solid;
+  background-color:#000;
+}
+
+.five:after {
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.five:hover,
+.five:active {
+  color: #0e83cd;
+}
+
+.five:hover:after,
+.five:active:after {
+  height: 100%;
+}

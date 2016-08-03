@@ -1,8 +1,10 @@
 @import "reset";
 @import "content";
 $content-color: #03a9f4;
-$main-color: #fafafa;
 
+body{
+	background-color: #C0C0C0
+}
 /* grid */
 
 .section {
@@ -33,7 +35,7 @@ $main-color: #fafafa;
   margin: 5%;
 }
 .main_col {
-  background-color: $main-color;
+
   width: calc(100% - 230px);
   height: 100em;
   margin-left: 230px;
