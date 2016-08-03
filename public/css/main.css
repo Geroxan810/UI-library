@@ -132,6 +132,40 @@ body {
   height: 100%;
 }
 
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchButton {
+  position: absolute;
+  right: 0px;
+  width: 40px;
+  height: 34px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #3547B3;
+}
+
 body {
   background-color: #C0C0C0;
 }
@@ -238,6 +272,11 @@ body {
 
 .wet_asphalt {
   background-color: #34495E;
+}
+
+.button {
+  margin-top: 80px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {

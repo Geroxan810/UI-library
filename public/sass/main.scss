@@ -1,5 +1,6 @@
 @import "reset";
 @import "content";
+@import "search";
 $content-color: #03a9f4;
 
 body{
@@ -84,6 +85,12 @@ body{
 .amethyst{background-color: #9B59B6;}
 .Wisteria{background-color: #8e44ad;}
 .wet_asphalt{background-color: #34495E;}
+
+
+.button {
+	margin-top: 80px;
+	text-align:center;
+}
 
 @media only screen and (max-width: 900px) {
 	.span_2_of_2, .span_1_of_2 { width: 100%; }
