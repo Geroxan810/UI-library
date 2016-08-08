@@ -166,6 +166,71 @@ body {
   background-color: #3547B3;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+#popup-check {
+  display: none;
+}
+#popup-check:checked + * + #popup-label2 {
+  opacity: 1;
+  pointer-events: auto;
+}
+#popup-check:checked + * + * + #popup-form {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#popup-label {
+  color: #fff;
+}
+#popup-label:hover {
+  cursor: pointer;
+}
+
+#popup-label2 {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity .3s ease;
+  pointer-events: none;
+}
+#popup-label2:hover {
+  cursor: pointer;
+}
+
+#popup-form {
+  transform: translateX(-50%);
+  bottom: 50%;
+  left: 50%;
+  background: #fff;
+  border-radius: 2px;
+  width: 650px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: block;
+  transition: opacity .3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#popup-form input {
+  margin: 10px auto;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  resize: none;
+}
+
 body {
   background-color: #C0C0C0;
 }
@@ -284,6 +349,16 @@ body {
 
 .no-result {
   display: none;
+}
+
+.new-button {
+  text-align: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #ff9800;
+  padding: 15px;
+  color: #000000;
 }
 
 @media only screen and (max-width: 900px) {

@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 ]
             },
             sass: {
-                files: 'public/sass/main.scss',
+                files: 'public/sass/*.scss',
                 tasks: ['sass']
             }
         },
@@ -44,7 +44,8 @@ module.exports = function(grunt) {
                     'public/css/main.css': 'public/sass/main.scss'
                 }
             }
-        }
+        },
+
     });
 
 
